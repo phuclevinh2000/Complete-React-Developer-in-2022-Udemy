@@ -5,8 +5,9 @@ import {
   createUserDocumentFromAuth,
 } from '../../utils/firebase/firebase';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
+import SignInForm from '../../components/SignInForm/SignInForm';
 
-const SignIn = () => {
+const Authentication = () => {
   // useEffect(() => {
   //   const fetchData = async () => {
   //     const response = await getRedirectResult(auth);
@@ -27,9 +28,10 @@ const SignIn = () => {
     <div>
       <h1>Sign In Page</h1>
       <button onClick={logGoogleUser}>Sign in with Google Popup</button>
+      <SignInForm />
       <SignUpForm />
     </div>
   );
 };
 
-export default SignIn;
+export default Authentication;
